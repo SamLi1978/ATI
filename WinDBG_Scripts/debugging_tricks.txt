@@ -73,3 +73,5 @@ s -u 0x0 L?0x7FFFFFFF http://
 $$ Examples of looping through memory and printing URLs found.
 .foreach (url {s –[1]a 0x0 L?0x7FFFFFFF http://}){.printf “Found URL: %ma\n”,${url}}
 .foreach (url {s –[1]u 0x0 L?0x7FFFFFFF http://}){.printf “Found URL: %mu\n”,${url}}
+
+$$ Ends
